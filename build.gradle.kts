@@ -65,6 +65,7 @@ sourceSets.main {
 repositories {
     mavenCentral()
     maven("https://repo.spongepowered.org/maven/")
+    maven("https://cursemaven.com")
     // If you don't want to log in with your real minecraft account, remove this line
     maven("https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1")
 }
@@ -86,7 +87,9 @@ dependencies {
 
     // If you don't want to log in with your real minecraft account, remove this line
     runtimeOnly("me.djtheredstoner:DevAuth-forge-legacy:1.2.1")
-
+    implementation("curse.maven:baubles-227083:2273274")
+    implementation("curse.maven:thaumcraft-223628:2287496")
+    implementation("curse.maven:crafttweaker-239197:2838721")
 }
 
 // Tasks:
